@@ -1,4 +1,3 @@
-#!/bin/bash
 
 loadinfo="$(cat /proc/loadavg|awk '{print $1}')";
 free_mem=$(echo "scale=2;var=$(free -g|grep Mem|awk '{print $3}');var/=132;var*=100;var" | bc);
